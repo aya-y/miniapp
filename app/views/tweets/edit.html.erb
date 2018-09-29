@@ -1,0 +1,17 @@
+<div class="contents row">
+    <%= form_for(@tweet) do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :本文 %>
+      <%= f.text_area :text %>
+
+        <%= button_tag type: "submit", class: "" do %>
+         投稿する
+         <i class=“icon-arrow-right”></i>
+      <% end %>
+    <% end %>
+</div>
+
+
+
